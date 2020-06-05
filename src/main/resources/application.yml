@@ -5,9 +5,13 @@ server:
 eureka:
   server:
     eviction-interval-timer-in-ms: 1000
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: https://reservefast-eureka.herokuapp.com
 
 spring:
   application:
