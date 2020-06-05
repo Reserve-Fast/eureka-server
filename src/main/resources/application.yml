@@ -3,15 +3,11 @@ server:
   port: 8761
 
 eureka:
-  server:
-    eviction-interval-timer-in-ms: 1000
   instance:
-    hostname: localhost
+    prefer-ip-address: false
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: https://reservefast-eureka.herokuapp.com
+    register-with-eureka: false
+    fetch-registry: false
 
 spring:
   application:
